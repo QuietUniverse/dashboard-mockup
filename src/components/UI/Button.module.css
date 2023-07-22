@@ -1,0 +1,13 @@
+.btn {
+  background-color: var(--color-primary);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  box-shadow: 0 0.5rem 1.3rem rgba(73, 53, 255, 0.3);
+}

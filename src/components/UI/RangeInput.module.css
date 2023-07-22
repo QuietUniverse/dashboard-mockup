@@ -1,0 +1,39 @@
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 0.8rem;
+
+  height: 0.4rem;
+  background: #ececec;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+
+  /* custom */
+  background-color: var(--color-grey-light-1);
+  box-shadow: 0 0.35rem 0.8rem rgba(0, 0, 0, 0.15);
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+
+  transition: 0.2s ease-in-out;
+}
+
+input[type="range"]::-moz-range-thumb {
+  border: none;
+  border-radius: 0;
+
+  background-color: var(--color-grey-light-1);
+  box-shadow: 0 0.35rem 0.8rem rgba(0, 0, 0, 0.15);
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+}

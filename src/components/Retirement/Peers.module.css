@@ -1,0 +1,129 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: min-content min-content 1fr;
+  grid-column: 1 / -1;
+  margin-top: 3rem;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .layout {
+    grid-template-columns: 100%;
+    grid-template-rows: min-content min-content 1fr 1fr;
+    margin: 1.5rem 2rem 0;
+  }
+}
+
+.layout h3 {
+  text-transform: none;
+  grid-column: 1 / -1;
+}
+
+.info {
+  color: var(--color-grey-light-3);
+  grid-column: 1 / -1;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .info {
+    font-size: 1.4rem;
+    margin-top: 0.8rem;
+  }
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: max-content;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .list {
+    grid-row: 2 / span 1;
+    width: 100%;
+  }
+}
+
+.divider {
+  height: 0.3rem;
+  width: 80%;
+  background-color: var(--color-grey-divider);
+}
+
+@media only screen and (max-width: 43.75em) {
+  .divider {
+    width: 100%;
+  }
+}
+
+.donuts {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 10%;
+  grid-column: 2 / span 1;
+  margin-top: 1.5rem;
+  height: 12vh;
+  width: 90%;
+  margin-left: 10%;
+}
+
+@media only screen and (max-width: 75em) {
+  .donuts {
+    height: 10vh;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .donuts {
+    height: 8vh;
+    width: 100%;
+    align-items: flex-end;
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  .donuts {
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 1;
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+    height: 10vh;
+    margin-top: 3rem;
+  }
+}
+
+.donut {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: max-content;
+}
+
+.percent {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.percent sup {
+  font-size: 1.2rem;
+}
+
+.chart-desc {
+  margin-top: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.01;
+  color: var(--color-grey-dark-2);
+}

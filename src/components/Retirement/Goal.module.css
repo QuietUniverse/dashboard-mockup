@@ -1,0 +1,42 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .layout:first-child {
+    grid-column: 1 / -1;
+  }
+  .layout:first-child .value {
+    font-size: 2.8rem;
+  }
+}
+
+.value {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.goal-text {
+  text-transform: capitalize;
+  color: var(--color-grey-light-3);
+  margin-top: 0.3rem;
+}
+
+.divider {
+  background-color: #9b8fff;
+  height: 0.2rem;
+  width: 90%;
+  margin-top: 0.8rem;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .divider {
+    align-self: flex-start;
+    width: 80%;
+  }
+
+  .layout:first-child.layout .divider {
+    width: 100%;
+  }
+}

@@ -1,0 +1,76 @@
+:root {
+  box-sizing: border-box;
+  font-size: 48%;
+
+  --color-white: #ffffff;
+
+  --color-grey-light-1: #fafafa;
+  --color-grey-light-2: #eeeef0;
+  --color-grey-light-3: #a5a5a5;
+  --color-grey-divider: #f4f4f4;
+
+  --color-grey-dark-1: #373737;
+  --color-grey-dark-2: #454545;
+  --color-grey-dark-3: #636363;
+
+  --color-primary: #4935ff;
+  --color-primary-light: #85afff;
+  --color-primary-dark: #0800a3;
+
+  --color-secondary: #22d6aa;
+}
+
+@media only screen and (max-width: 75em) {
+  :root {
+    font-size: 42%;
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  :root {
+    font-size: 62.5%;
+  }
+}
+
+@media only screen and (min-width: 87.5em) {
+  :root {
+    font-size: 56.25%;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--color-grey-light-2);
+  color: var(--color-grey-dark-1);
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+@media only screen and (max-width: 43.75em) {
+  body {
+    display: block;
+  }
+}
+
+h3 {
+  font-family: "Bitter", serif;
+  font-weight: 700;
+  letter-spacing: -0.05rem;
+  color: var(--color-grey-dark-2);
+  text-transform: capitalize;
+  font-size: 2rem;
+}

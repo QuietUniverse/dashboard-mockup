@@ -1,0 +1,60 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 3rem;
+  color: var(--color-grey-dark-2);
+}
+
+.divider {
+  background-color: var(--color-grey-divider);
+  height: 0.3rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.btn {
+  padding: 1.5rem;
+  color: var(--color-grey-light-1);
+  width: 90%;
+  border-radius: 0.8rem;
+  margin-top: 0.8rem;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  align-self: center;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .btn {
+    width: 100%;
+  }
+}
+
+.docs {
+  display: flex;
+  align-self: center;
+}
+
+.docs:hover.docs a {
+  color: var(--color-primary-dark);
+}
+
+.docs:hover.docs a svg {
+  fill: var(--color-primary-dark);
+}
+
+.docs,
+docs * {
+  cursor: pointer;
+}

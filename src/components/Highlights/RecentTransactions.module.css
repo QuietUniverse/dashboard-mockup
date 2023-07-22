@@ -1,0 +1,46 @@
+.layout {
+  margin-top: 7rem;
+  color: var(--color-grey-dark-2);
+  width: inherit;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .layout {
+    margin: 7rem 2rem 0;
+    width: fill-available;
+    background-color: var(--color-grey-light-1);
+    border-radius: 3rem;
+    padding: 5rem 2rem;
+  }
+}
+
+.transactions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  font-weight: 700;
+  margin-top: 3rem;
+}
+
+.transaction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: max-content;
+
+  padding-bottom: 1.5rem;
+  border-bottom: 0.3rem solid var(--color-grey-divider);
+}
+
+@media only screen and (max-width: 62.5em) {
+  .transaction {
+    width: 100%;
+    align-items: stretch;
+  }
+}
+
+.transaction span {
+  color: var(--color-grey-light-3);
+}

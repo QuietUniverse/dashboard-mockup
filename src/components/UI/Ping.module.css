@@ -1,0 +1,7 @@
+.ping {
+  border-radius: 50%;
+  height: 0.7rem;
+  width: 0.7rem;
+  position: absolute;
+  background-color: var(--color-primary-light);
+}

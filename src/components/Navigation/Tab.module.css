@@ -1,0 +1,27 @@
+.item {
+  display: inline-block;
+}
+
+.tab {
+  padding: 0.65rem;
+  background-color: transparent;
+  fill: var(--color-grey-light-3);
+  transition: all 0.3s ease-out;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 0.8rem;
+}
+
+.tab.active {
+  fill: var(--color-white);
+  background-color: var(--color-primary);
+  box-shadow: 0 0.5rem 1.3rem rgba(73, 53, 255, 0.4);
+}
+
+@media only screen and (max-width: 43.75em) {
+  .tab {
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem;
+  }
+}

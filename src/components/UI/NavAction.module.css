@@ -1,0 +1,13 @@
+.btn {
+  background-color: transparent;
+  border: none;
+  height: 3rem;
+  width: 3rem;
+  fill: var(--color-grey-light-3);
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.btn:hover {
+  fill: var(--color-primary);
+}

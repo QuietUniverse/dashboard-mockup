@@ -1,0 +1,50 @@
+.layout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-left: 0.3rem solid #5f4dff;
+  padding-left: 3rem;
+  margin-top: 3rem;
+}
+
+.question {
+  font-weight: 400;
+  letter-spacing: -0.04rem;
+  font-size: 2rem;
+}
+
+.highlight {
+  font-weight: 700;
+  letter-spacing: -0.04rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.tagline {
+  color: var(--color-grey-light-3);
+  margin-top: 0.6rem;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1.2rem;
+}
+
+.link:hover.link a {
+  color: var(--color-primary-dark);
+}
+
+.link:hover.link a svg {
+  fill: var(--color-primary-dark);
+}
+
+.link,
+.link * {
+  cursor: pointer;
+}
+
+.smaller {
+  font-size: 1.5rem;
+}
